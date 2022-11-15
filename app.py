@@ -12,6 +12,8 @@ def raw_ticker(ticker):
     return jsonify(data)
 
 
+
+
 @app.route('/raw', methods=['GET'])
 def raw():
     req = pd.read_csv("raw_final_true.csv")
